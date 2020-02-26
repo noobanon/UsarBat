@@ -2,7 +2,7 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
-#
+# All Meme Sayari By @noobanon if you remove this uh uz gey 
 #
 
 """ Userbot module for having some fun with people. """
