@@ -2,10 +2,11 @@
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram.
 # FORK AT YOUR OWN RISK
 # Installing
+# Note i removed Shit moduels Coz Bot Slow Down
 
 ### The Easy Way
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/noobanon/usarbat)
 
 ### The Normal Way
 
