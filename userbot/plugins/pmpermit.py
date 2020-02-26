@@ -20,7 +20,7 @@ USER_BOT_NO_WARN = ("I Know You Have Some Work Or Need Help Of My Master\n\n"
 
 
 if Var.PRIVATE_GROUP_ID is not None:
-    @command(pattern="^.approve ?(.*)")
+    @command(pattern="^.pm ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
            return
@@ -57,7 +57,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
 
-    @command(pattern="^.listapproved")
+    @command(pattern="^.lpm")
     async def approve_p_m(event):
         if event.fwd_from:
             return
