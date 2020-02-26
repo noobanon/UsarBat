@@ -40,7 +40,7 @@ MessageMediaPhoto
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 
 
-@borg.on(admin_cmd("memify ?(.*)"))
+@borg.on(admin_cmd("meme ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return 
