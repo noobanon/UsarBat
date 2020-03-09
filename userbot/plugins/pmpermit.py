@@ -38,7 +38,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     del PREV_REPLY_MESSAGE[chat.id]
                 pmpermit_sql.approve(chat.id, reason)
                 await event.edit("Maderbhasker Approved To Pm You Sir Kek [{}](tg://user?id={})".format(firstname, chat.id))
-                await asyncio.sleep(3)
+                await asyncio.sleep(2)
                 await event.delete()
 
 
@@ -54,7 +54,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit(" You Can't Message Me/n Uh Chu Is Blocked..[{}](tg://user?id={})".format(firstname, chat.id))
-                await asyncio.sleep(3)
+                await asyncio.sleep(2)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
 
@@ -137,9 +137,9 @@ if Var.PRIVATE_GROUP_ID is not None:
     async def do_pm_permit_action(chat_id, event):
         if chat_id not in PM_WARNS:
             PM_WARNS.update({chat_id: 0})
-        if PM_WARNS[chat_id] == 2:
+        if PM_WARNS[chat_id] == 1:
             r = await event.reply(USER_BOT_WARN_ZERO)
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
             await event.client(functions.contacts.BlockRequest(chat_id))
             if chat_id in PREV_REPLY_MESSAGE:
                 await PREV_REPLY_MESSAGE[chat_id].delete()
