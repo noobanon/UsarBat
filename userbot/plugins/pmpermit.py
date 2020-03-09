@@ -17,7 +17,7 @@ USER_BOT_NO_WARN = ("I Know You Have Some Work Or Need Help Of My Master\n\n"
                     f"Don't Message Too Much If You Did.\n\n"
                     "**You Will Loose Chance To Talk with my Master.**\n\n"
                     "**NOTE:- MY MASTER MOSTLY REPLY EVERYONES MESSAGE ONLY IN @ZONERSCHAT**\n\n"
-                    "**GO ENJOY YOUR LIFE**")
+                    "**GO ENJOY YOUR LIFE Wanna See Rippers Check @noobanon Kids**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
@@ -137,7 +137,7 @@ if Var.PRIVATE_GROUP_ID is not None:
     async def do_pm_permit_action(chat_id, event):
         if chat_id not in PM_WARNS:
             PM_WARNS.update({chat_id: 0})
-        if PM_WARNS[chat_id] == 5:
+        if PM_WARNS[chat_id] == 2:
             r = await event.reply(USER_BOT_WARN_ZERO)
             await asyncio.sleep(3)
             await event.client(functions.contacts.BlockRequest(chat_id))
