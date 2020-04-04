@@ -13,5 +13,5 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit("`Gruji Abhi Hum Jinda Hai ^.^ \n\n`"
                      f"`My peru owner`: {DEFAULTUSER}\n"
-                     "[Get My Codes](https://xvideo.caam)")
+                     "[Repo](https://t.me/zonerschat)")
                      
